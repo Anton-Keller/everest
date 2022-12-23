@@ -33,14 +33,14 @@ a{
     padding: 10px;
     width: 80px;
     border-radius: 0.2rem;
-    background-color: #82b44098;
+    background-color: #641e1e;
     border: 1px solid #262626;  
     color: #ffffff;
     transition: 0.25s linear;
 }
 .ev-preview_button:hover{
     background-color: #262626;
-    border: 1px solid #82b440;
+    border: 1px solid #772424;
 }
 
 .ev-top_bar {
@@ -57,7 +57,7 @@ a{
     padding: 20px;
 }
 .ev-top_bar__icon {
-    color: #b3b3b3;
+    color: #c9c9c9;
     font-size: 12px;
     margin-right: 10px;
     background-image: url("./assets/headphones_FILL0_wght400_GRAD0_opsz48.png");
@@ -68,16 +68,21 @@ a{
 }
 .ev-top_bar__number {
     font-size: 12px;
-    color: #b3b3b3;
+    color: #c9c9c9;
 }
 
 
 
 .ev-header {
-    background-color: #c9c9c9;
     height: 90px;
 }
 .ev-header__container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    background-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,14 +103,21 @@ a{
     align-items: center;
 }
 .ev-header__list_item {
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .ev-header__link {
+    text-transform: uppercase;
+    font-weight: bold;
     font-size: 16px;
-    color: #262626;
+    color: #c9c9c9;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 1.35rem;
+    transition: 0.13s linear;
 }
 .ev-header__link:hover{
-    color: #c9c9c9;
+    border: 1px solid #c9c9c975;
+    border-radius: 1.5rem;
 }
 
 .ev-banner{
@@ -115,7 +127,7 @@ a{
     background-attachment: fixed; 
     background-size: cover;
     width: 100%;
-    height: 796px;
+    height: 786px;
 }
 /* .ev-banner__iphone-screen{
     position: absolute;
@@ -165,21 +177,24 @@ video{
     font-size: 23vw;
     font-weight: bold;
     text-transform: uppercase;
+    height: 90.8vh;
 }
 .s1{
-    animation-duration: 1.3s;
+    /* animation-duration: 1.3s;
     animation-name: s1;
-    color: #c9c9c9;
+    color: #c9c9c9; */
+    z-index: 8;
 }
-@keyframes s1 {
+.s2{
+    animation-duration: 1.2s;
+    animation-name: s2;
+    color: #c9c9c9;
+    z-index: 7;
+}
+@keyframes s2 {
     from {
-        opacity: 0;
-        transform: translate(0, -50px);
-    }
-
-    50%{
-        opacity: 0.5;
-        transform: translate(0, 10px);  
+        opacity: 0.2;
+        transform: translate(-200px, 0);
     }
   
     to {
@@ -187,20 +202,88 @@ video{
         transform: translate(0, 0);
     }
 }
-.s2{
-    animation-duration: 1.3s;
-    animation-name: s2;
-    color: #c9c9c9;
-}
-@keyframes s2 {
-    from {
-        opacity: 0;
-        transform: translate(0, 50px);
-    }
 
-    50%{
-        opacity: 0.5;
-        transform: translate(0, -10px);  
+.s3{
+    animation-duration: 1.2s;
+    animation-name: s3;
+    color: #c9c9c9;
+    z-index: 6;
+}
+@keyframes s3 {
+    from {
+        opacity: 0.2;
+        transform: translate(-450px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.s4{
+    animation-duration: 1.2s;
+    animation-name: s4;
+    color: #c9c9c9;
+    z-index: 5;
+}
+@keyframes s4 {
+    from {
+        opacity: 0.2;
+        transform: translate(-650px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.s5{
+    animation-duration: 1.2s;
+    animation-name: s5;
+    color: #c9c9c9;
+    z-index: 4;
+}
+@keyframes s5 {
+    from {
+        opacity: 0.2;
+        transform: translate(-850px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.s6{
+    animation-duration: 1s;
+    animation-name: s6;
+    color: #c9c9c9;
+    z-index: 4;
+}
+@keyframes s6 {
+    from {
+        opacity: 0.2;
+        transform: translate(-950px, 0);
+    }
+  
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+.s7{
+    animation-duration: 1s;
+    animation-name: s7;
+    color: #c9c9c9;
+    z-index: 3;
+}
+@keyframes s7 {
+    from {
+        opacity: 0.2;
+        transform: translate(-1150px, 0);
     }
   
     to {
@@ -213,6 +296,7 @@ video{
 .ev-banner__video{
     z-index: 1;
     width: 100%;
+    height: 90.8vh;
 }
 .ev-banner__container{
     padding: 150px 90px;
