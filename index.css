@@ -74,10 +74,10 @@ a{
 
 
 .ev-header {
-    background-color: #c9c9c9;
     height: 90px;
 }
 .ev-header__container {
+    background-color: #dddddd;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -88,7 +88,7 @@ a{
 .ev-header__logotype{
     width: 150px;
     height: 50px;
-    transition: 0.25s linear;
+    transition: 0.15s linear;
 }
 
 .ev-header__nav {
@@ -102,6 +102,8 @@ a{
 }
 .ev-header__link {
     font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
     color: #262626;
 }
 .ev-header__link:hover{
